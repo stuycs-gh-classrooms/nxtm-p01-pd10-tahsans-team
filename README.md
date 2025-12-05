@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Mfyqb_T6)
 # NeXtCS Project 01
-### thinker0: FRIST LSAT
-### thinker1: FRIST LSAT
+### thinker0: TAHSAN KASHEM
+
 ---
 
 ### Overview
@@ -22,23 +22,23 @@ The first phase will be to work on this document.
 
 ## Phase 0: Selection, Analysis & Plan
 
-#### Selected Project: CHOOSE WISELY
+#### Selected Project: CONWAYS GAME OF LIFE
 
 ### Necessary Features
-What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
+"Living Cells" that move and follow these rules paraphrased from wikipedia where in Any cell taht is  
+
 
 YOUR ANSWERS HERE
 
 ### Extra Features
-What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
-
+Design choices like size of cells, how the sliders will look
 YOUR ANSWERS HERE
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+- Set up of individualized 
 
 2D Array:
 - YOUR ANSWER HERE
@@ -48,7 +48,9 @@ How will you be using arrays in this project?
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- Setup
+- run
+- 
 
 Mouse Control:
 - Mouse movement:
