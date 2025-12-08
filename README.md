@@ -25,7 +25,9 @@ The first phase will be to work on this document.
 #### Selected Project: CONWAYS GAME OF LIFE
 
 ### Necessary Features
-"Living Cells" that move and follow these rules paraphrased from wikipedia where in Any cell taht is  
+0) 2 classes. 
+1) One class that generates 2D array 
+2) + class to generate the organisms that populate the cells of the 2D array alive or dead 
 
 
 YOUR ANSWERS HERE
