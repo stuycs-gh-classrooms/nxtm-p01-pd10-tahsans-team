@@ -33,8 +33,11 @@ The first phase will be to work on this document.
 YOUR ANSWERS HERE
 
 ### Extra Features
-Design choices like size of cells, how the sliders will look
-YOUR ANSWERS HERE
+1) Using Mouse to arrange organisms and location
+2) Being able to use keyboard to run the program ike refreshing/restarting, starting over, creating one
+3) A dead cell becomes alive if it has 2 alive neighbors. There is no case for the cell to surive to the next instance of time
+A dead cell becomes alive if it has either 2 or 5 alive neighbors. It survives only when there are 4 alive neighbors.
+
 
 ### Array Usage
 How will you be using arrays in this project?
