@@ -1,6 +1,7 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Mfyqb_T6)
 # NeXtCS Project 01
-### thinker0: FRIST LSAT
-### thinker1: FRIST LSAT
+### thinker0: TAHSAN KASHEM
+
 ---
 
 ### Overview
@@ -21,23 +22,28 @@ The first phase will be to work on this document.
 
 ## Phase 0: Selection, Analysis & Plan
 
-#### Selected Project: CHOOSE WISELY
+#### Selected Project: CONWAYS GAME OF LIFE
 
 ### Necessary Features
-What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
+0) 2 classes. 
+1) One class that generates 2D array 
+2) + class to generate the organisms that populate the cells of the 2D array alive or dead 
+
 
 YOUR ANSWERS HERE
 
 ### Extra Features
-What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
+1) Using Mouse to arrange organisms and location
+2) Being able to use keyboard to run the program ike refreshing/restarting, starting over, creating one
+3) A dead cell becomes alive if it has 2 alive neighbors. There is no case for the cell to surive to the next instance of time
+A dead cell becomes alive if it has either 2 or 5 alive neighbors. It survives only when there are 4 alive neighbors.
 
-YOUR ANSWERS HERE
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+- Set up of individualized 
 
 2D Array:
 - YOUR ANSWER HERE
@@ -47,24 +53,41 @@ How will you be using arrays in this project?
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- r: resets the program, setting up everything randomly
+- space: causes the program to run for one instance of time
+- c: sets the rules
+- k: sets the rules of the program to seeds
+- p: sets the rules of the program to the non named rule set.
+- w: kills entire grid
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
-
+- Mouse movement: causes movement through hovering
+- Mouse pressed: organism at coordinate is alive
 
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
-CLASS NAME0
+CLASS Environment
 - Instance variables:
-  - LIST INSTANCE VARS HERE
-- METHODS
-  - LIST METHODS HERE
+  * Organisms [][] grid;  
+  * int organismDensity;
+- METHODS:
+  * constructor (int x, int y, density) // sets the size of the 2D array basedon x, y, and sets organismDensity to density
+  * populate (organismDensity) //populates the 2d array based on organismDensity
+   - overload both using this ()
+  * update () // tells each organism to update its next state based on its neighbors, then a separate loop to tell each organism to update its current state
+   - overload this, so that the rule set changes based on which update method you are using, which might requires putting in some parameter from the driver file
+  * display () // loops through the array telling each organism to display itself
+  * mouseupdate (int mousex, int mousey) // method to change the state of the organism that the mouse clicks to alive
 
-CLASS NAME1
+CLASS Organism.
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - int currentState // 1 == alive, 0 == dead
+  - int nextState // 1 == alive, 0 == dead
+  - int size // ideally the size of each organism should be the width that one row fills the entire screen
+  - Pvector corner // the corner of each organism, to be later used for display
 - METHODS
-  - LIST METHODS HERE
+  - constructor (int x, int y, int sz, int st) // makes the corner into pvecotr (x,y), size to sz, and state = st
+  - a display () // fills it color based on its state and then creates a square to represent the organism
+  - updateNextState (int neighborState) // updates the organisms next state based on its neighbor
+  - changestate () // changes its current state to nextstate
