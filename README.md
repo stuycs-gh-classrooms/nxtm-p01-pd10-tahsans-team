@@ -53,13 +53,16 @@ How will you be using arrays in this project?
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- Setup
-- run
-- 
+- r: resets the program, setting up everything randomly
+- space: causes the program to run for one instance of time
+- c: sets the rules
+- k: sets the rules of the program to seeds
+- p: sets the rules of the program to the non named rule set.
+- w: kills entire grid
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: causes movement through hovering
+- Mouse pressed: organism at coordinate is alive
 
 
 ### Classes
